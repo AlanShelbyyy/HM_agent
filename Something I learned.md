@@ -155,4 +155,7 @@ app.py (用户输入) -> ReactAgent (代理初始化，包含模型和工具) ->
 
 - app.py 中的 st.chat_message("assistant").write_stream(capture(res_stream, response_messages)) 接收 execute_stream 返回的流式响应。
 - capture 函数将每个 chunk 添加到 response_messages 列表中，并逐字符地显示在聊天界面上，模拟打字效果。
-- 最终，完整的模型响应会被添加到 st.session_state["message"] 中。
+- 最终，完整的模型响应会被添加到 st.session_state["message"] 中。 
+
+
+先做multi-agent同进程，再做unicorn跨进程
