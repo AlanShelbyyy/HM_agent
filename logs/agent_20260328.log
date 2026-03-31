@@ -1,0 +1,54 @@
+2026-03-28 16:20:42,155 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-28 16:20:42,156 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | nih
+2026-03-28 16:21:19,163 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-28 16:21:19,163 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 告诉我扫地机器人的功率消耗情况
+2026-03-28 16:21:23,190 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-03-28 16:21:23,191 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '扫地机器人功率消耗'}
+2026-03-28 16:21:25,178 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize调用成功
+2026-03-28 16:21:25,573 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-28 16:21:25,573 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 扫地机器人功率通常在15W至60W之间，具体功耗因型号和工作模式而异。
+2026-03-28 18:25:02,660 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-28 18:25:02,661 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 你好
+2026-03-28 18:27:44,273 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-28 18:27:44,273 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 告诉我扫地机器人的电消耗
+2026-03-28 18:28:23,940 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-28 18:28:23,941 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 告诉我扫地机器人的电消耗
+2026-03-28 18:28:25,795 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-03-28 18:28:25,795 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '扫地机器人电消耗'}
+2026-03-28 18:28:27,715 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize调用成功
+2026-03-28 18:28:28,172 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-28 18:28:28,173 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 扫地机器人功耗通常在15W至60W之间，具体电消耗取决于型号、使用时长及工作模式。
+2026-03-28 18:33:19,380 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-28 18:33:19,380 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 你好
+2026-03-28 18:55:25,158 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-28 18:55:25,158 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 你好
+2026-03-28 19:18:57,508 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-28 19:18:57,509 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 你好
+2026-03-28 19:32:59,499 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-28 19:32:59,500 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 你好
+2026-03-28 19:34:00,595 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-28 19:34:00,596 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | s你好
+2026-03-28 19:38:08,999 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-28 19:38:08,999 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 你好
+2026-03-28 19:41:38,480 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-28 19:41:38,481 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | hi
+2026-03-28 19:44:55,402 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-28 19:44:55,403 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | l你好
+2026-03-28 19:47:06,338 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-28 19:47:06,338 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 你好
+2026-03-28 20:02:28,965 - agent - WARNING - factory.py:51 - [embeddings]模型qwen3-vl-embedding不可用，切换为text-embedding-v1，原因：Error code: 400 - {'error': {'message': 'url error, please check url！ For details, see: https://help.aliyun.com/zh/model-studio/error-code#error-url (request id: 2026032820022860365680046030383)', 'type': 'upstream_error', 'param': '400', 'code': 'bad_response_status_code'}}
+2026-03-28 20:03:12,043 - agent - WARNING - factory.py:51 - [embeddings]模型qwen3-vl-embedding不可用，切换为text-embedding-v1，原因：Error code: 400 - {'error': {'message': 'url error, please check url！ For details, see: https://help.aliyun.com/zh/model-studio/error-code#error-url (request id: 2026032820031160055500021162545)', 'type': 'upstream_error', 'param': '400', 'code': 'bad_response_status_code'}}
+2026-03-28 20:03:21,161 - agent - WARNING - factory.py:51 - [embeddings]模型qwen3-vl-embedding不可用，切换为text-embedding-v1，原因：Error code: 400 - {'error': {'message': 'url error, please check url！ For details, see: https://help.aliyun.com/zh/model-studio/error-code#error-url (request id: 2026032820032099037380081705847)', 'type': 'upstream_error', 'param': '400', 'code': 'bad_response_status_code'}}
+2026-03-28 20:03:38,546 - agent - WARNING - factory.py:52 - [embeddings]模型qwen3-vl-embedding不可用，切换为text-embedding-v1，原因：Could not import transformers python package. This is needed for OpenAIEmbeddings to work without `tiktoken`. Please install it with `pip install transformers`. 
+2026-03-28 20:04:12,077 - agent - WARNING - factory.py:67 - [embeddings]模型qwen3-vl-embedding不可用，切换为text-embedding-v1，原因：Error code: 400 - {'error': {'message': 'url error, please check url！ For details, see: https://help.aliyun.com/zh/model-studio/error-code#error-url (request id: 2026032820041150736180025852469)', 'type': 'upstream_error', 'param': '400', 'code': 'bad_response_status_code'}}
+2026-03-28 20:04:26,908 - agent - WARNING - factory.py:67 - [embeddings]模型qwen3-vl-embedding不可用，切换为text-embedding-v1，原因：Error code: 400 - {'error': {'message': 'url error, please check url！ For details, see: https://help.aliyun.com/zh/model-studio/error-code#error-url (request id: 2026032820042639291410009942896)', 'type': 'upstream_error', 'param': '400', 'code': 'bad_response_status_code'}}
+2026-03-28 20:09:25,499 - agent - WARNING - factory.py:67 - [embeddings]模型qwen3-vl-embedding不可用，切换为text-embedding-v1，原因：Error code: 400 - {'error': {'message': 'url error, please check url！ For details, see: https://help.aliyun.com/zh/model-studio/error-code#error-url (request id: 2026032820092526208880034239051)', 'type': 'upstream_error', 'param': '400', 'code': 'bad_response_status_code'}}
+2026-03-28 20:09:31,494 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-28 20:09:31,494 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 你好
+2026-03-28 20:23:29,347 - agent - WARNING - factory.py:67 - [embeddings]模型qwen3-vl-embedding不可用，切换为qwen3-vl-embedding，原因：Error code: 400 - {'error': {'message': 'url error, please check url！ For details, see: https://help.aliyun.com/zh/model-studio/error-code#error-url (request id: 2026032820232899375890085337129)', 'type': 'upstream_error', 'param': '400', 'code': 'bad_response_status_code'}}
+2026-03-28 20:28:06,811 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-28 20:28:06,811 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 你好
+2026-03-28 20:38:17,164 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-28 20:38:17,164 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 你好
+2026-03-28 20:41:30,347 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-28 20:41:30,348 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 你好
