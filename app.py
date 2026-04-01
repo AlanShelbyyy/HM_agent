@@ -1,14 +1,14 @@
 import time
 
 import streamlit as st
-from agent.react_agent import ReactAgent
+from agent.main_agent import MainAgent
 
 # 标题
-st.title("智扫通机器人智能客服")
+st.title("购物平台智能客服")
 st.divider()
 
 if "agent" not in st.session_state:
-    st.session_state["agent"] = ReactAgent()#实例
+    st.session_state["agent"] = MainAgent()  # 实例
 
 if "message" not in st.session_state:
     st.session_state["message"] = []
@@ -39,7 +39,7 @@ if prompt:
         #capture 函数将每个 chunk 添加到 response_messages 列表中，并逐字符地显示在聊天界面上，模拟打字效果。
         st.chat_message("assistant").write_stream(capture(res_stream, response_messages))
         #完整的模型响应会被添加到
-        st.session_state["message"].append({"role": "assistant", "content": response_messages[-1]})
+        st.session_state["message"].append({"role": "assistant", "content": "".join(response_messages)})
         st.rerun()
 
 

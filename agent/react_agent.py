@@ -1,8 +1,15 @@
 from langchain.agents import create_agent
 from model.factory import chat_model
 from utils.prompt_loader import load_system_prompts
-from agent.tools.agent_tools import (rag_summarize, get_weather, get_user_location, get_user_id,
-                                     get_current_month, fetch_external_data, fill_context_for_report)
+from agent.tools.agent_tools import (
+    rag_summarize,
+    get_weather,
+    get_user_location,
+    get_user_id,
+    get_current_month,
+    fetch_external_data,
+    fill_context_for_report,
+)
 from agent.tools.middleware import monitor_tool, log_before_model, report_prompt_switch
 
 
@@ -11,8 +18,15 @@ class ReactAgent:
         self.agent = create_agent(
             model=chat_model,
             system_prompt=load_system_prompts(),
-            tools=[rag_summarize, get_weather, get_user_location, get_user_id,
-                   get_current_month, fetch_external_data, fill_context_for_report],
+            tools=[
+                rag_summarize,
+                get_weather,
+                get_user_location,
+                get_user_id,
+                get_current_month,
+                fetch_external_data,
+                fill_context_for_report,
+            ],
             middleware=[monitor_tool, log_before_model, report_prompt_switch],
         )
 
@@ -24,14 +38,16 @@ class ReactAgent:
         }
 
         # 第三个参数context就是上下文runtime中的信息，就是我们做提示词切换的标记
-        for chunk in self.agent.stream(input_dict, stream_mode="values", context={"report": False}):
+        for chunk in self.agent.stream(
+            input_dict, stream_mode="values", context={"report": False}
+        ):
             latest_message = chunk["messages"][-1]
             if latest_message.content:
-                #每次产出（yield）一个值后，会“冻结”当前的状态（记住变量是多少、代码执行到哪一行了），等待下一次被唤醒。
+                # 每次产出（yield）一个值后，会“冻结”当前的状态（记住变量是多少、代码执行到哪一行了），等待下一次被唤醒。
                 yield latest_message.content.strip() + "\n"
-        
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     agent = ReactAgent()
 
     for chunk in agent.execute_stream("给我生成我的使用报告"):
